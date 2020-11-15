@@ -1,9 +1,14 @@
 #include<stdio.h>
 
+void multiple(int m) {
+	for (int multy = 1; multy <= 12; multy++) {
+		printf("%d x %d = %d\n", m, multy, m * multy);
+	}
+}
+
 int main() {
 	int mul;
 	scanf_s("%d",&mul);
-	for (int multy = 1; multy <= 12; multy++) {
-		printf("%d x %d = %d\n",mul,multy,mul*multy);
-	}
+	multiple(mul);
+	
 }
